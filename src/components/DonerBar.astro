@@ -1,0 +1,109 @@
+---
+
+---
+
+    <div class="container">
+        <div class="slider">
+          <div class="slider-item">50kr</div>
+          <div class="slider-item">150kr</div>
+          <div class="slider-item">500kr</div>
+          <div class="slider-item ">1000kr</div>
+          <div class="slider-item">Andet beløb</div>
+        </div>
+            <div class="doner-button">Donér Nu</div>
+      </div>
+
+ <style>
+   
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 50px;
+
+}
+
+
+.slider {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  background: white;
+  border-radius: 50px;
+  min-width: 800px;
+  overflow: hidden;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.slider-item {
+  flex: 1;
+  text-align: center;
+  padding: 15px;
+  font-family: Kanit, sans-serif;
+  font-size: 18px;
+  font-weight: regular;
+  color: black;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+
+.slider-item.active {
+  background-color: #2b5dab;
+  color: white;
+}
+
+.button {
+
+    background-color: #32549E;
+}
+
+.doner-button {
+    background-color: #32549E;
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
+    font-family: Kanit, sans-serif;
+    margin-left: 25px;
+    padding: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.doner-button.active {
+    background-color: white;
+    color: #2b5dab;
+}
+
+ </style>
+
+ <script>
+const sliderItems = document.querySelectorAll('.slider-item');
+
+sliderItems.forEach((item) => {
+  item.addEventListener('mouseover', () => {
+    sliderItems.forEach((item) => item.classList.remove('active'));
+   
+    item.classList.add('active'); 
+});
+    item.addEventListener('mouseout', () => {
+    item.classList.remove('active');
+  });
+});
+
+const donerButton = document.querySelectorAll('.doner-button');
+
+donerButton.forEach((item) => {
+  item.addEventListener('mouseover', () => {
+    donerButton.forEach((button) => button.classList.remove('active'));
+
+    item.classList.add('active');
+  });
+
+    item.addEventListener('mouseout', () => {
+    item.classList.remove('active');
+  });
+});
+</script>
