@@ -1,0 +1,90 @@
+---
+const { title, ptext, img } = Astro.props;
+---
+
+<div class="container">
+    <div class="card">
+    <div class="text-container">
+      <h3>{title}</h3>
+      <p>{ptext}</p>
+    </div>
+  <div class="image-container">
+    <img src={img} alt="Tryllekunstner Birger" />
+  </div>
+    </div>
+</div>
+
+<style>
+ .container{
+    display: flex;
+    justify-content: center;
+    
+   
+  }
+
+  .card {
+    display: flex;
+    background-color: #F1EEF3;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 0 20px 0 20px;
+    max-width: 1200px;
+    min-width: 1200px;
+    height: 410px;
+    
+  }
+
+  .image-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding-left: 5px;
+    padding-right: 5px;
+    
+  }
+
+  .image-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 25px;
+    
+ 
+  }
+
+  .text-container {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    height: 100px;
+    color: #333;
+    padding-top: 50px;
+    
+  }
+
+  h3 {
+  font-family: "Barrio", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50.49px; 
+  text-align: left;
+  padding-left: 15%;
+  color: #FF5A34;
+  }
+
+  p {
+  color: #011556;
+  font-family: "Kanit", serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.5;
+  max-width: 50%;
+  padding-left: 15%;
+  padding-right: 15%;
+  text-align: left;
+
+  }
+</style>
