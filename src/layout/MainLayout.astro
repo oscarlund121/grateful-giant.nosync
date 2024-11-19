@@ -4,6 +4,8 @@ import ArtistCard2 from "../components/ArtistCard-2.astro";
 import HeroSection from "../components/HeroSection.astro";
 import VideoCard from "../components/VideoCard.astro";
 import DonerBar from "../components/DonerBar.astro";
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
 ---
 
 <html lang="en">
@@ -12,49 +14,54 @@ import DonerBar from "../components/DonerBar.astro";
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Barrio&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barrio&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <title>ArtistCard</title>
   </head>
+  <Header />
   <HeroSection />
   <DonerBar />
   <VideoCard />
-  <h1>Mød <br/> Magikerne</h1>
-  	<img class="svg-wand-stars" src="/img/wand_stars.svg" alt="">
+  <h1>Mød <br /> Magikerne</h1>
+  <img class="svg-wand-stars" src="/img/wand_stars.svg" alt="" />
   <ArtistCard img="/img/birger.png" title="BIRGER" ptext="Birger tryller for KidsAid i Viborg og Odense. Han har optrådt for både store og små i over 20 år." />
-  	<img class="svg-wand-stars" src=".//img/stars_1.svg" alt="">
+  <img class="svg-wand-stars" src=".//img/stars_1.svg" alt="" />
   <ArtistCard2 img="/img/lasse.png" title="LASSE NK" ptext="Lasse er på Herlev og Hvidovre og Gram Slot. Han er en mester til balloner og har en populær Segway." />
-  	<img class="svg-wand-stars" src=".//img/stars_2.svg" alt="">
+  <img class="svg-wand-stars" src=".//img/stars_2.svg" alt="" />
   <ArtistCard img="/img/michael.png" title="TRYLLE MICHAEL" ptext="Tryller på Riget. En ægte magiker, der også får de voksne til at forbløffes." />
-  	<img class="svg-wand-stars" src=".//img/stars_5.svg" alt="">
+  <img class="svg-wand-stars" src=".//img/stars_5.svg" alt="" />
   <ArtistCard2 img="/img/holly.png" title="HENNY SOLSKIN" ptext="Henny Solskin er en ægte solstråle. Med hendes mange farver, dyr og bamser spreder hun glæde på Herning." />
-  	<img class="svg-wand-stars" src=".//img/stars_4.svg" alt="">
+  <img class="svg-wand-stars" src=".//img/stars_4.svg" alt="" />
   <ArtistCard img="/img/rasmus.png" title="RASMUS FUP & FIDUS" ptext="Rasmus Fup og Fidus fra AUH tryller på de forskellige børneafdelinger på Aarhus og Familiehuset." />
-  	<img class="svg-wand-stars" src=".//img/stars_5.svg" alt="">
+  <img class="svg-wand-stars" src=".//img/stars_5.svg" alt="" />
   <ArtistCard2 img="/img/falbe.png" title="FABELAGTIGE FALBE" ptext="En magiker med grine-garanti." />
+  <Footer />
+
+  <style>
+    body {
+      background: rgb(255, 255, 255);
+      background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(187, 197, 221, 1) 20%, rgba(83, 117, 192, 1) 50%, rgba(40, 73, 147, 1) 80%, rgba(7, 34, 81, 1) 100%);
+    }
+
+    h1 {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      font-family: "Barrio", serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 119.74px;
+      color: #011556;
+    }
+
+    .svg-wand-stars {
+      margin-left: 30%;
+      margin-bottom: -120px;
+      margin-top: -100px;
+    }
+  </style>
 </html>
-<style>
-  body{
-    background: rgb(255,255,255);
-background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(187,197,221,1) 20%, rgba(83,117,192,1) 50%, rgba(40,73,147,1) 80%, rgba(7,34,81,1) 100%);
-  }
-
-  h1 {
-  display: flex;
-  justify-content: center;
-  text-align: center; 
-  font-family: "Barrio", serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 119.74px; ;
-  color: #011556;
-  }
-
-  .svg-wand-stars {
-    margin-left: 30%;
-    margin-bottom: -120px;
-    margin-top: -100px;
-  }
-
-</style>
