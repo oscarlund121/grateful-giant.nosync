@@ -25,7 +25,7 @@ import BedriftCard from "../components/BedriftCard.astro";
   </head>
   <Header />
   <HeroSection />
-  
+  <BedriftCard />
   <DonerBar />
   <VideoCard />
   <h1>Mød <br /> Magikerne</h1>
@@ -97,21 +97,18 @@ import BedriftCard from "../components/BedriftCard.astro";
       margin-top: -100px;
     }
 
-	@media (max-width: 800px) {
-		h1{
-			font-size: 89.78px;
-	}
-	.svg-wand-stars {
-		width: 60%;
-		height: auto;
-      margin-left: 20%;
-      margin-bottom: -30px;
-      margin-top: -30px;
+    @media (max-width: 800px) {
+      h1 {
+        font-size: 89.78px;
+      }
+      .svg-wand-stars {
+        width: 60%;
+        height: auto;
+        margin-left: 20%;
+        margin-bottom: -30px;
+        margin-top: -30px;
+      }
     }
-	}
-
-	
-
   </style>
 
 
