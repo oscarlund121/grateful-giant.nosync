@@ -15,21 +15,22 @@ const { title, ptext, img } = Astro.props;
 </div>
 
 <style>
-  .container {
+.container{
     display: flex;
     justify-content: center;
+   
   }
 
   .card {
     display: flex;
-    background-color: #f1eef3;
+    background-color: #F1EEF3;
     border-radius: 25px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    margin: 0 20px 0 20px;
     max-width: 1200px;
-    min-width: 1200px;
     height: 410px;
+    margin: 0 20px 0 20px;
+    
   }
 
   .image-container {
@@ -40,6 +41,7 @@ const { title, ptext, img } = Astro.props;
     overflow: hidden;
     padding-left: 5px;
     padding-right: 5px;
+    
   }
 
   .image-container img {
@@ -47,36 +49,92 @@ const { title, ptext, img } = Astro.props;
     height: auto;
     object-fit: cover;
     border-radius: 25px;
+ 
   }
 
   .text-container {
     display: flex;
     flex-direction: column;
     flex: 2;
-    height: 100px;
     color: #333;
     padding-top: 50px;
   }
 
+ 
+
   h3 {
-    font-family: "Barrio", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 50.49px;
-    text-align: left;
-    padding-left: 15%;
-    color: #ff5a34;
+  font-family: "Barrio", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50.49px; 
+  text-align: left;
+  padding-left: 15%;
+  color: #FF5A34;
   }
 
   p {
-    color: #011556;
-    font-family: "Kanit", serif;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 1.5;
-    max-width: 50%;
-    padding-left: 15%;
-    padding-right: 15%;
-    text-align: left;
+  color: #011556;
+  font-family: "Kanit", serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.5;
+  max-width: 50%;
+  padding-left: 15%;
+  padding-right: 15%;
+  text-align: left;
+  }
+
+  @media(max-width: 800px) {
+    .card {
+        flex-direction: column;
+    background-color: #F1EEF3;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    height: 600px;
+    margin: 0 20px 0 20px;
+    }
+
+    .image-container img {
+    width: 90%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 25px;
+    
+ 
+  }
+
+  .text-container {
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
+    color: #333;
+    padding-top: 0;
+    padding-left: 1px;
+  }
+
+  h3 {
+    align-items: center;
+    justify-content: center;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px; 
+  text-align: left;
+  color: #FF5A34;
+  padding-left: 0;
+  }
+
+  p {
+  color: #011556;
+  font-family: "Kanit", serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.5;
+  max-width: 50%;
+  padding-left: 15%;
+  padding-right: 15%;
+  text-align: left;
+  }
   }
 </style>
