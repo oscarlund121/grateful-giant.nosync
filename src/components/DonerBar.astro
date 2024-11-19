@@ -2,7 +2,8 @@
 
 ---
 
-    <div class="container">
+<h3>Spred Magien</h3>    
+<div class="container">
         <div class="slider">
           <div class="slider-item">50kr</div>
           <div class="slider-item">150kr</div>
@@ -14,6 +15,16 @@
       </div>
 
  <style>
+
+    h3 {
+        display: flex;
+        justify-content: center;
+        margin-top: 10%;
+        font-family: "Barrio", serif;
+        font-weight: 400;
+        font-size: 89.49px;
+        color: #011556;
+    }
    
 .container {
   display: flex;
@@ -22,8 +33,6 @@
   margin-top: 8%;
   margin-bottom: 8%;
   padding: 20px;
-  border-radius: 50px;
-
 }
 
 
@@ -57,11 +66,6 @@
   color: white;
 }
 
-.button {
-
-    background-color: #32549E;
-}
-
 .doner-button {
     background-color: #32549E;
     border-radius: 50px;
@@ -78,6 +82,53 @@
 .doner-button.active {
     background-color: white;
     color: #011556;
+}
+
+@media (max-width: 800px) {
+   h3 {
+    font-size: 50.49px;
+   }
+
+   .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8%;
+  margin-bottom: 8%;
+  padding: 20px;
+  border-radius: 50px;
+
+  
+}
+.slider {
+display: flex;
+align-items: center;
+gap: 2px;
+background: white;
+border-radius: 50px;
+min-width: 300px;
+overflow: hidden;
+box-shadow: 5px 8px 8px 0px rgba(0,0,0,0.75);
+}
+
+.slider-item {
+  padding: 10px;
+  font-family: Kanit, sans-serif;
+  font-size: 10px;
+
+}
+
+.doner-button {
+    color: white;
+    cursor: pointer;
+    font-family: Kanit, sans-serif;
+    font-size: 10px;
+}
+
+.doner-button.active {
+    background-color: white;
+    color: #011556;
+}
 }
 
  </style>

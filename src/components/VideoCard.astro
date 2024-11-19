@@ -3,36 +3,39 @@
 ---
 
 <div class="container">
-    <h1>Støtte video</h1>
-    <div class="video-container">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-        <video src="public/video/kidsaid-video.mp4"></video>
-    </div>
+  <h1>Støtte video</h1>
+  <div class="video-container">
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat.
+    </p>
+    <video src="public/video/kidsaid-video.mp4"></video>
+  </div>
 </div>
 
 <style>
-
-.container {
+  .container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; 
-}
+    justify-content: center;
+  }
 
-h1 {
-    background-color: #32549E;
+  h1 {
+    background-color: #32549e;
     font-family: "Kanit", serif;
     font-weight: 400;
     font-style: normal;
     font-size: 50.49px;
     z-index: 1;
     margin-top: 100px;
-    color: #FFFFFF;
+    color: #ffffff;
+  }
 
-}
-
-.video-container {
-    background-color: #32549E;
+  .video-container {
+    background-color: #32549e;
     display: flex;
     height: 500px;
     max-width: 1050px;
@@ -40,24 +43,57 @@ h1 {
     min-width: 1050px;
     padding: 5%;
     border-radius: 17px;
-}
-p {
-    flex:1;
-    color: #FFFFFF;
-  font-family: "Kanit", serif;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 1.5;
-  max-width: 50%;
-  padding-top: 10%;
-  padding-left: 5%;
-  padding-right: 15%;
-  text-align: left;
-}
+  }
+  p {
+    flex: 1;
+    color: #ffffff;
+    font-family: "Kanit", serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.5;
+    max-width: 50%;
+    padding-top: 10%;
+    padding-left: 5%;
+    padding-right: 15%;
+    text-align: left;
+  }
 
+  video {
+    width: 50%;
+    height: auto;
+    border-radius: 15px;
+  }
 
-video {
-        width: 50%;
-        height: auto;
+  @media (max-width: 800px) {
+    h1 {
+      font-weight: 300;
+      font-size: 28.44px;
     }
+
+    p {
+      font-size: 12px;
+      font-weight: 200;
+      max-width: 80%;
+      padding-left: 20%;
+    }
+    .video-container {
+      background-color: #32549e;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 450px;
+      max-width: 600px;
+      margin-top: -15%;
+      min-width: 350px;
+      padding: 5%;
+      border-radius: 17px;
+    }
+
+    video {
+      width: 100%;
+      height: auto;
+      margin-bottom: 5%;
+    }
+  }
 </style>

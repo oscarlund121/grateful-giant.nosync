@@ -3,46 +3,56 @@
 ---
 
 <div class="container">
-    <h1>Mindemagikerne</h1>
-    <h2>Lad magien skabe minder for livet</h2>
-    <p>I Magic Kids er det formålet, at vores magikere er til stede på alle landets børneafdelinger og skaber magi og glæde, så børnene bliver opslugt at de spændende magiske tricks og bliver underholdt og får en ægte pause fra sygdom, kedelig ventetid, frygt for ubehag eller sorg.
-        Magic Kids er for børn i alle aldre. Blandt andet små trylletricks, som er sjove for de lidt større børn, og disse tricks foræres til børnene, så de kan øve sig og trylle videre.
-        Der er tricks og balloner for de lidt mindre børn, som kan forundres og grine og få et ballondyr.
-        For de største børn, er der kort tricks og små illusioner, der er sjove at udføre foran vennerne, når de bliver udskrevet, eller når disse kommer på besøg.</p>
+  <h1>Minde<br />magikerne</h1>
+  <h2>Lad magien skabe minder for livet</h2>
+  <p>
+    I Magic Kids er det formålet, at vores magikere er til stede på alle landets
+    børneafdelinger og skaber magi og glæde, så børnene bliver opslugt at de
+    spændende magiske tricks og bliver underholdt og får en ægte pause fra
+    sygdom, kedelig ventetid, frygt for ubehag eller sorg. Magic Kids er for
+    børn i alle aldre. Blandt andet små trylletricks, som er sjove for de lidt
+    større børn, og disse tricks foræres til børnene, så de kan øve sig og
+    trylle videre. Der er tricks og balloner for de lidt mindre børn, som kan
+    forundres og grine og få et ballondyr. For de største børn, er der kort
+    tricks og små illusioner, der er sjove at udføre foran vennerne, når de
+    bliver udskrevet, eller når disse kommer på besøg.
+  </p>
 </div>
 <div class="container">
-    <img class="top-stars" src="public/img/stars_top_hero.svg" alt="">
-    <p class="p-container">“Han lavede mine tanker til små stjerner, og jeg kunne mærke dem flyve rundt i rummet. Det var det bedste!” - Malte, 7år.</p>
-    <img class="bottom-stars" src="public/img/stars_top_hero.svg" alt="">
+  <img class="top-stars" src="./img/stars_top_hero.svg" alt="" />
+  <p class="p-container">
+    “Han lavede mine tanker til små stjerner, og jeg kunne mærke dem flyve rundt
+    i rummet. Det var det bedste!” - Malte, 7år.
+  </p>
+  <img class="bottom-stars" src="./img/stars_top_hero.svg" alt="" />
 </div>
 
 <style>
-
-    .container {
-        display: flex;
-        flex-direction: column; 
-        align-items: center;
-        justify-content: center; 
-        
-    }
-    h1 {
-         color: #F4EC60;
-         font-family: "Barrio", serif;
-         font-weight: 400;
-         font-style: normal;
-         font-size: 119.74px; 
-         margin-top: 15%;
-         margin-bottom: 15%;
-         text-align: center; 
-         -webkit-text-stroke: 2px #011556;
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
-  h2 {
-    text-align: center; 
+  h1 {
+    color: #f4ec60;
     font-family: "Barrio", serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 50.49px; 
+    font-size: 119.74px;
+    margin-top: 15%;
+    margin-bottom: 15%;
+    text-align: center;
+    -webkit-text-stroke: 2px #011556;
+  }
+
+  h2 {
+    text-align: center;
+    font-family: "Barrio", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50.49px;
     margin-bottom: 5%;
     color: #011556;
   }
@@ -60,19 +70,19 @@
   }
 
   .p-container {
-      border: solid 4px #FF5A34;
-      border-radius: 50px 0 50px 0;
-      color: #011556;
-      font-family: "Kanit", serif;
-      font-weight: 400;
-      font-style: italic;
-      font-size: 50px;
-      justify-content: center;
-      line-height: 1.5;
-      max-width: 70%;
-    
-      padding: 2%;
-      text-align: center;
+    border: solid 4px #ff5a34;
+    border-radius: 50px 0 50px 0;
+    color: #011556;
+    font-family: "Kanit", serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 50px;
+    justify-content: center;
+    line-height: 1.5;
+    max-width: 70%;
+
+    padding: 2%;
+    text-align: center;
   }
 
   .top-stars {
@@ -82,8 +92,36 @@
   }
 
   .bottom-stars {
-   margin-right: 72.5%;
+    margin-right: 72.5%;
     margin-top: -130px;
     z-index: 1;
+  }
+
+  @media (min-width 800px) {
+    br {
+      display: none;
+    }
+  }
+
+  @media (max-width: 800px) {
+    h1 {
+      font-size: 89.78px;
+    }
+
+    h2 {
+      font-size: 50.49px;
+    }
+
+    p {
+      font-size: 20px;
+      text-align: left;
+      font-weight: 200;
+    }
+
+    .p-container,
+    .top-stars,
+    .bottom-stars {
+      display: none;
+    }
   }
 </style>
