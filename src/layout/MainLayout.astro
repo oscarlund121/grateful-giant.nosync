@@ -7,6 +7,8 @@ import DonerBar from "../components/DonerBar.astro";
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
 import BedriftCard from "../components/BedriftCard.astro";
+import ProgressBar from "../components/ProgressBar.astro";
+import "../styles/style.css"
 ---
 
 <html lang="en">
@@ -15,6 +17,7 @@ import BedriftCard from "../components/BedriftCard.astro";
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
+	
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -23,6 +26,7 @@ import BedriftCard from "../components/BedriftCard.astro";
     />
     <title>ArtistCard</title>
   </head>
+  <ProgressBar />
   <Header />
   <HeroSection />
   <BedriftCard />
