@@ -1,0 +1,116 @@
+---
+
+---
+
+<header class="header">
+  <div class="logo">
+    <img src="../public/img/kidsaidlogo.png" alt="“Kids”" />
+  </div>
+  <nav class="nav-links">
+    <a href="#">Om KidsAid</a>
+    <a href="#">Indsamling</a>
+    <a href="#">For Børnene</a>
+    <a href="#">Kontakt Os</a>
+  </nav>
+  <button class="donate-btn">Donér Nu</button>
+</header>
+
+<style>
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid #011556;
+    flex-wrap: wrap;
+  }
+
+  .logo img {
+    max-width: 150px;
+    height: auto;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 50px;
+    flex-shrink: 1;
+  }
+
+  .nav-links a {
+    text-decoration: none;
+    font-family: "Kanit", serif;
+    font-size: 16px;
+    color: #011556;
+    white-space: nowrap;
+  }
+
+  .donate-btn {
+    background-color: #ff6b35;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-family: "Barrio", serif;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    white-space: nowrap;
+    transition: background-color 0.3s ease;
+    flex-shrink: 0;
+  }
+
+  .donate-btn:hover {
+    background-color: #e65a25;
+  }
+
+  @media (max-width: 800px) {
+    .header {
+      flex-wrap: nowrap;
+    }
+
+    .logo img {
+      max-width: 80px;
+    }
+
+    .nav-links {
+      gap: 20px;
+    }
+
+    .nav-links a {
+      font-size: 14px;
+    }
+
+    .donate-btn {
+      font-size: 14px;
+      padding: 6px 12px;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .header {
+      padding: 5px 10px;
+      flex-wrap: nowrap;
+    }
+
+    .logo img {
+      max-width: 70px;
+    }
+
+    .nav-links {
+      gap: 10px;
+    }
+
+    .nav-links a {
+      font-size: 10px;
+    }
+
+    .donate-btn {
+      font-size: 12px;
+      padding: 5px 10px;
+    }
+  }
+</style>
