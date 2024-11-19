@@ -6,6 +6,7 @@ import VideoCard from "../components/VideoCard.astro";
 import DonerBar from "../components/DonerBar.astro";
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
+import BedriftCard from "../components/BedriftCard.astro";
 ---
 
 <html lang="en">
@@ -24,6 +25,7 @@ import Header from "../components/Header.astro";
   </head>
   <Header />
   <HeroSection />
+  
   <DonerBar />
   <VideoCard />
   <h1>Mød <br /> Magikerne</h1>
@@ -94,6 +96,22 @@ import Header from "../components/Header.astro";
       margin-bottom: -120px;
       margin-top: -100px;
     }
+
+	@media (max-width: 800px) {
+		h1{
+			font-size: 89.78px;
+	}
+	.svg-wand-stars {
+		width: 60%;
+		height: auto;
+      margin-left: 20%;
+      margin-bottom: -30px;
+      margin-top: -30px;
+    }
+	}
+
+	
+
   </style>
 
 
