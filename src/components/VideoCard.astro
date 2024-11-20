@@ -11,7 +11,8 @@
       veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
       commodo consequat.
     </p>
-    <video src="/video/kidsaid-video.mp4" controls></video>
+    <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/B_bm9jMqi3k" frameborder="0" allowfullscreen></iframe>
+
   </div>
 </div>
 
@@ -22,25 +23,24 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 10%;
-
   }
 
   h1 {
-    background-color: #32549e;
     font-family: "Kanit", serif;
     font-weight: 400;
     font-style: normal;
     font-size: 50.49px;
     z-index: 1;
     margin-top: 10%;
-    margin-bottom: 2%;
+    margin-bottom: 4%;
+    padding: 1%;
     color: #ffffff;
   }
 
   .video-container {
     background-color: #32549e;
     display: flex;
-    height: 600px;
+    height: 500px;
     max-width: 1050px;
     margin-top: -10%;
     min-width: 1050px;
@@ -61,14 +61,14 @@
     text-align: left;
   }
 
-  video {
+  .video {
     width: 50%;
     height: auto;
     border-radius: 15px;
+    margin-top: 5%;
   }
 
   @media (max-width: 800px) {
-   
     h1 {
       font-weight: 300;
       font-size: 28.44px;
