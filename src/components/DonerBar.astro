@@ -2,72 +2,70 @@
 
 ---
 
-<h3>Spred Magien</h3>    
+<h3>Spred Magien</h3>
 <div class="container">
-        <div class="slider">
-          <div class="slider-item">50kr</div>
-          <div class="slider-item">150kr</div>
-          <div class="slider-item">500kr</div>
-          <div class="slider-item ">1000kr</div>
-          <div class="slider-item">Andet beløb</div>
-        </div>
-            <div class="doner-button">Donér Nu</div>
-      </div>
+  <div class="slider">
+    <div class="slider-item">50kr</div>
+    <div class="slider-item">150kr</div>
+    <div class="slider-item">500kr</div>
+    <div class="slider-item">1000kr</div>
+    <div class="slider-item">Andet beløb</div>
+  </div>
+  <div class="doner-button">Donér Nu</div>
+</div>
 
- <style>
+<style>
+  h3 {
+    display: flex;
+    justify-content: center;
+    margin-top: 15%;
+    font-family: "Barrio", serif;
+    font-weight: 400;
+    font-size: 89.49px;
+    color: #011556;
+  }
 
-    h3 {
-        display: flex;
-        justify-content: center;
-        margin-top: 10%;
-        font-family: "Barrio", serif;
-        font-weight: 400;
-        font-size: 89.49px;
-        color: #011556;
-    }
-   
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 8%;
-  margin-bottom: 8%;
-  padding: 20px;
-}
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8%;
+    margin-bottom: 8%;
+    padding: 20px;
+  }
 
+  .slider {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    background: white;
+    border-radius: 50px;
+    min-width: 800px;
+    overflow: hidden;
+    box-shadow: 5px 8px 8px 0px rgba(0, 0, 0, 0.75);
+  }
 
-.slider {
-  display: flex;
-  align-items: center;
-  gap: 2px;
-  background: white;
-  border-radius: 50px;
-  min-width: 800px;
-  overflow: hidden;
-  box-shadow: 5px 8px 8px 0px rgba(0,0,0,0.75);
-}
+  .slider-item {
+    flex: 1;
+    text-align: center;
+    padding: 15px;
+    font-family: Kanit, sans-serif;
+    font-size: 18px;
+    font-weight: regular;
+    color: #011556;
+    cursor: pointer;
+    transition:
+      background-color 0.3s,
+      color 0.3s;
+  }
 
+  .slider-item.active {
+    background-color: #2b5dab;
+    color: white;
+  }
 
-.slider-item {
-  flex: 1;
-  text-align: center;
-  padding: 15px;
-  font-family: Kanit, sans-serif;
-  font-size: 18px;
-  font-weight: regular;
-  color: #011556;
-  cursor: pointer;
-  transition: background-color 0.3s, color 0.3s;
-}
-
-
-.slider-item.active {
-  background-color: #2b5dab;
-  color: white;
-}
-
-.doner-button {
-    background-color: #32549E;
+  .doner-button {
+    background-color: #32549e;
     border-radius: 50px;
     color: white;
     cursor: pointer;
@@ -76,88 +74,84 @@
     padding: 15px;
     padding-left: 25px;
     padding-right: 25px;
-    box-shadow: 5px 8px 8px 0px rgba(0,0,0,0.75);
-}
+    box-shadow: 5px 8px 8px 0px rgba(0, 0, 0, 0.75);
+  }
 
-.doner-button.active {
+  .doner-button.active {
     background-color: white;
     color: #011556;
-}
+  }
 
-@media (max-width: 800px) {
-   h3 {
-    font-size: 50.49px;
-   }
+  @media (max-width: 800px) {
+    h3 {
+      font-size: 50.49px;
+    }
 
-   .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 8%;
-  margin-bottom: 8%;
-  padding: 20px;
-  border-radius: 50px;
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 8%;
+      margin-bottom: 8%;
+      padding: 20px;
+      border-radius: 50px;
+    }
+    .slider {
+      display: flex;
+      align-items: center;
+      gap: 2px;
+      background: white;
+      border-radius: 50px;
+      min-width: 300px;
+      overflow: hidden;
+      box-shadow: 5px 8px 8px 0px rgba(0, 0, 0, 0.75);
+    }
 
-  
-}
-.slider {
-display: flex;
-align-items: center;
-gap: 2px;
-background: white;
-border-radius: 50px;
-min-width: 300px;
-overflow: hidden;
-box-shadow: 5px 8px 8px 0px rgba(0,0,0,0.75);
-}
+    .slider-item {
+      padding: 10px;
+      font-family: Kanit, sans-serif;
+      font-size: 10px;
+    }
 
-.slider-item {
-  padding: 10px;
-  font-family: Kanit, sans-serif;
-  font-size: 10px;
+    .doner-button {
+      color: white;
+      cursor: pointer;
+      font-family: Kanit, sans-serif;
+      font-size: 10px;
+    }
 
-}
+    .doner-button.active {
+      background-color: white;
+      color: #011556;
+    }
+  }
+</style>
 
-.doner-button {
-    color: white;
-    cursor: pointer;
-    font-family: Kanit, sans-serif;
-    font-size: 10px;
-}
+<script>
+  const sliderItems = document.querySelectorAll(".slider-item");
 
-.doner-button.active {
-    background-color: white;
-    color: #011556;
-}
-}
+  sliderItems.forEach((item) => {
+    item.addEventListener("mouseover", () => {
+      sliderItems.forEach((item) => item.classList.remove("active"));
 
- </style>
-
- <script>
-const sliderItems = document.querySelectorAll('.slider-item');
-
-sliderItems.forEach((item) => {
-  item.addEventListener('mouseover', () => {
-    sliderItems.forEach((item) => item.classList.remove('active'));
-   
-    item.classList.add('active'); 
-});
-    item.addEventListener('mouseout', () => {
-    item.classList.remove('active');
-  });
-});
-
-const donerButton = document.querySelectorAll('.doner-button');
-
-donerButton.forEach((item) => {
-  item.addEventListener('mouseover', () => {
-    donerButton.forEach((button) => button.classList.remove('active'));
-
-    item.classList.add('active');
+      item.classList.add("active");
+    });
+    item.addEventListener("mouseout", () => {
+      item.classList.remove("active");
+    });
   });
 
-    item.addEventListener('mouseout', () => {
-    item.classList.remove('active');
+  const donerButton = document.querySelectorAll(".doner-button");
+
+  donerButton.forEach((item) => {
+    item.addEventListener("mouseover", () => {
+      donerButton.forEach((button) => button.classList.remove("active"));
+
+      item.classList.add("active");
+    });
+
+    item.addEventListener("mouseout", () => {
+      item.classList.remove("active");
+    });
   });
-});
 </script>
